@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+
+/* =========================
+   INVITATION UNDERNEATH
+========================= */
+
+/* =========================
+   MAIN INVITATION
+========================= */
+
+body {
+    font-family: Georgia, serif;
+    overflow-x: hidden;
+    background: #f7f3ec;
+}
+
+.invitation {
+    background: #f7f3ec;
+    color: #263746;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.eyebrow {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+    letter-spacing: 4px;
+
+    color: #b08d57;
+
+    margin-bottom: 35px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 12vw, 110px);
+    font-weight: 400;
+
+    color: #263746;
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+.gold-line {
+    width: 80px;
+    height: 1px;
+
+    background: #b08d57;
+
+    margin-bottom: 25px;
+}
+
+.event-name {
+    font-size: clamp(25px, 5vw, 42px);
+
+    color: #263746;
+
+    margin-bottom: 45px;
+}
+
+.invitation-text {
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #65717a;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.date-day {
+    font-size: 65px;
+
+    color: #b08d57;
+
+    line-height: 1;
+}
+
+.date-month {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown-section {
+    min-height: 45vh;
+
+    background: #263746;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 20px;
+}
+
+.countdown-title {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+
+    color: #d6bd8a;
+
+    margin-bottom: 40px;
+}
+
+.countdown {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+}
+
+.time-box {
+    min-width: 75px;
+
+    text-align: center;
+}
+
+.time-box span {
+    display: block;
+
+    font-size: 40px;
+
+    color: white;
+
+    margin-bottom: 10px;
+}
+
+.time-box p {
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+
+    color: #d6bd8a;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 100vh;
+    }
+
+    .countdown {
+        gap: 20px;
+    }
+
+    .time-box {
+        min-width: 60px;
+    }
+
+    .time-box span {
+        font-size: 30px;
+    }
+
+}
+
+
+/* =========================
+   OPENING SCREEN
+========================= */
+
+.opening-screen {
+  position: fixed;
+  inset: 0;
+
+  background: #294c63;
+
+  z-index: 100;
+
+  transition: opacity 1.5s ease;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   TRIANGLES
+========================= */
+
+.triangle {
+  position: absolute;
+
+  left: 50%;
+
+  width: 0;
+  height: 0;
+
+  transform: translateX(-50%);
+
+  transition: transform 1.5s ease;
+}
+
+
+/* TOP TRIANGLE */
+
+.triangle-top {
+  top: 0;
+
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+
+  border-top: 50vh solid #355f78;
+
+  filter: drop-shadow(
+    0 2px 0 #c9a86a
+  );
+}
+
+
+/* BOTTOM TRIANGLE */
+
+.triangle-bottom {
+  bottom: 0;
+
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+
+  border-bottom: 50vh solid #426f86;
+
+  filter: drop-shadow(
+    0 -2px 0 #c9a86a
+  );
+}
+
+
+/* =========================
+   WAX SEAL
+========================= */
+
+.wax-seal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 95px;
+  height: 95px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  transition: all 0.6s ease;
+}
+
+.wax-seal img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   OPENING ANIMATION
+========================= */
+
+/* Seal disappears */
+
+.opening-screen.open .wax-seal {
+  transform: translate(-50%, -50%) scale(0);
+
+  opacity: 0;
+}
+
+
+/* Top triangle moves upward */
+
+.opening-screen.open .triangle-top {
+  transform: translate(-50%, -100%);
+}
+
+
+/* Bottom triangle moves downward */
+
+.opening-screen.open .triangle-bottom {
+  transform: translate(-50%, 100%);
+}
+
+
+/* Entire opening fades away */
+
+.opening-screen.open {
+  opacity: 0;
+
+  pointer-events: none;
+}

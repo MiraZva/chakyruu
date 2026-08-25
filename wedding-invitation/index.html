@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wedding Invitation</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- OPENING SCREEN -->
+    <div class="opening-screen" id="openingScreen">
+
+        <img
+            class="triangle triangle-top"
+            src="assets/images/top-triangle.png"
+            alt=""
+        >
+
+        <img
+            class="triangle triangle-bottom"
+            src="assets/images/bottom-triangle.png"
+            alt=""
+        >
+
+        <button class="wax-seal" id="waxSeal">
+            <img
+                src="assets/images/wax-seal.png"
+                alt="Open invitation"
+            >
+        </button>
+
+    </div>
+
+
+    <!-- MAIN INVITATION -->
+    <main class="invitation">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <p class="eyebrow">WEDDING CELEBRATION</p>
+
+            <h1>Жайнагүл</h1>
+
+            <div class="gold-line"></div>
+
+            <p class="event-name">Кыз Узатуу</p>
+
+            <p class="invitation-text">
+                Dear family and friends,<br>
+                we would be honored to share<br>
+                this special day with you.
+            </p>
+
+            <div class="date">
+
+                <div class="date-day">
+                    27
+                </div>
+
+                <div class="date-month">
+                    <span>SEPTEMBER</span>
+                    <span>2026</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COUNTDOWN -->
+        <section class="countdown-section">
+
+            <p class="countdown-title">
+                UNTIL THE CELEBRATION
+            </p>
+
+            <div class="countdown">
+
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <p>DAYS</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <p>HOURS</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <p>MINUTES</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <p>SECONDS</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- MUSIC -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/music/song.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
