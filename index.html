@@ -1,57 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-  <title>Wedding Invitation</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-  <link rel="stylesheet" href="style.css">
+    <title>Жайнагүл — Кыз Узатуу</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-    <!-- OPENING SCREEN -->
-    <div class="opening-screen" id="openingScreen">
+    <!-- =========================
+         MAIN WEDDING WEBSITE
+    ========================== -->
 
-    <div class="envelope-stage">
-
-
-
-        <img class="envelope-part envelope-left"
-             src="assets/images/envelope-left.png" alt="">
-
-        <img class="envelope-part envelope-right"
-             src="assets/images/envelope-right.png" alt="">
-
-        <img class="envelope-part envelope-bottom"
-             src="assets/images/envelope-bottom.png" alt="">
-             
-        <img class="envelope-part envelope-top"
-             src="assets/images/envelope-top.png" alt="">
-    </div>
-
-   <button class="wax-seal" id="waxSeal">
-        <img src="assets/images/wax-seal.png" alt="Open invitation">
-    </button> 
-
-
-</div>
-
-
-    <!-- MAIN INVITATION -->
     <main class="invitation">
 
-        <!-- HERO -->
         <section class="hero">
 
-            <p class="eyebrow">WEDDING CELEBRATION</p>
+            <p class="eyebrow">
+                WEDDING CELEBRATION
+            </p>
 
-            <h1>Жайнагүл</h1>
+
+            <h1>
+                Жайнагүл
+            </h1>
+
 
             <div class="gold-line"></div>
 
-            <p class="event-name">Кыз Узатуу</p>
+
+            <p class="event-name">
+                Кыз Узатуу
+            </p>
+
 
             <p class="invitation-text">
                 Dear family and friends,<br>
@@ -59,15 +49,24 @@
                 this special day with you.
             </p>
 
+
             <div class="date">
 
                 <div class="date-day">
-                    27
+                    25
                 </div>
 
+
                 <div class="date-month">
-                    <span>SEPTEMBER</span>
-                    <span>2026</span>
+
+                    <span>
+                        SEPTEMBER
+                    </span>
+
+                    <span>
+                        2026
+                    </span>
+
                 </div>
 
             </div>
@@ -75,33 +74,68 @@
         </section>
 
 
-        <!-- COUNTDOWN -->
+        <!-- =========================
+             COUNTDOWN
+        ========================== -->
+
         <section class="countdown-section">
 
             <p class="countdown-title">
                 UNTIL THE CELEBRATION
             </p>
 
+
             <div class="countdown">
 
                 <div class="time-box">
-                    <span id="days">00</span>
-                    <p>DAYS</p>
+
+                    <span id="days">
+                        00
+                    </span>
+
+                    <p>
+                        DAYS
+                    </p>
+
                 </div>
 
-                <div class="time-box">
-                    <span id="hours">00</span>
-                    <p>HOURS</p>
-                </div>
 
                 <div class="time-box">
-                    <span id="minutes">00</span>
-                    <p>MINUTES</p>
+
+                    <span id="hours">
+                        00
+                    </span>
+
+                    <p>
+                        HOURS
+                    </p>
+
                 </div>
 
+
                 <div class="time-box">
-                    <span id="seconds">00</span>
-                    <p>SECONDS</p>
+
+                    <span id="minutes">
+                        00
+                    </span>
+
+                    <p>
+                        MINUTES
+                    </p>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="seconds">
+                        00
+                    </span>
+
+                    <p>
+                        SECONDS
+                    </p>
+
                 </div>
 
             </div>
@@ -111,13 +145,76 @@
     </main>
 
 
-    <!-- MUSIC -->
-    <audio id="backgroundMusic" loop>
-        <source src="assets/music/song.mp4" type="audio/mpeg">
+
+    <!-- =========================
+         OPENING ENVELOPE
+    ========================== -->
+
+    <div
+        class="opening-screen"
+        id="openingScreen"
+    >
+
+        <div class="envelope">
+
+            <!-- TOP PART -->
+
+            <img
+                class="envelope-part envelope-top"
+                src="assets/images/envelope-top.png"
+                alt=""
+            >
+
+
+            <!-- BOTTOM PART -->
+
+            <img
+                class="envelope-part envelope-bottom"
+                src="assets/images/envelope-bottom.png"
+                alt=""
+            >
+
+
+            <!-- WAX SEAL -->
+
+            <button
+                class="wax-seal"
+                id="waxSeal"
+                aria-label="Open invitation"
+            >
+
+                <img
+                    src="assets/images/wax-seal.png"
+                    alt=""
+                >
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         MUSIC
+    ========================== -->
+
+    <audio
+        id="backgroundMusic"
+        loop
+    >
+
+        <source
+            src="assets/music/song.mp4"
+            type="audio/mp4"
+        >
+
     </audio>
 
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
