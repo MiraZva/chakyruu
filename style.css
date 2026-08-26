@@ -9,156 +9,663 @@
 }
 
 
-/* =========================
-   BODY
-========================= */
-
 html {
     scroll-behavior: smooth;
 }
 
 
 body {
-    font-family: Georgia, serif;
+    font-family: Georgia, "Times New Roman", serif;
 
     overflow-x: hidden;
-    overflow-y: auto;
 
-    background: #f7f3ec;
+    background: #f7eee8;
+
+    color: #8f6670;
 }
 
+
+/* =========================
+   MAIN COUPLE PHOTO
+========================= */
+
+.main-photo {
+    width: 100%;
+
+    max-width: 390px;
+
+    margin: 0 auto;
+}
+
+
+.main-photo img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
 
 /* =========================
    MAIN INVITATION
 ========================= */
 
 .invitation {
-    background: #f7f3ec;
-    color: #263746;
+    width: 100%;
+
+    max-width: 430px;
+
+    margin: 0 auto;
+
+    background: #f7eee8;
+
+    overflow: visible;
 }
 
 
 /* =========================
-   HERO SECTION
+   GENERAL
 ========================= */
 
-.hero {
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
+section {
+    position: relative;
 
     text-align: center;
 
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
 
-/* Small top text */
-
-.eyebrow {
+.section-number {
     font-family: Arial, sans-serif;
 
-    font-size: 11px;
+    font-size: 10px;
+
     letter-spacing: 4px;
 
-    color: #b08d57;
+    color: #9b7180;
 
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 
-/* Name */
+.section-number.light {
+    color: rgba(255, 255, 255, 0.75);
+}
 
-.hero h1 {
-    font-size: clamp(55px, 12vw, 110px);
 
-    font-weight: 400;
+.section-title {
+    font-size: 20px;
 
-    color: #263746;
+    font-weight: 500;
 
-    line-height: 1;
+    letter-spacing: 2px;
+
+    color: #a76879;
 
     margin-bottom: 30px;
 }
 
 
-/* Gold line */
+/* =========================
+   FIRST SECTION
+========================= */
 
-.gold-line {
-    width: 80px;
-    height: 1px;
+.wedding-page {
+    min-height: 100vh;
+    box-shadow: 100vw 0 0 #f7eee8, -100vw 0 0 #f7eee8;
 
-    background: #b08d57;
+    display: flex;
+    flex-direction: column;
 
-    margin-bottom: 25px;
+    align-items: center;
+
+    padding-top: 20px;
 }
 
 
-/* Event name */
+.top-ribbon {
+    width: 100%;
 
-.event-name {
-    font-size: clamp(25px, 5vw, 42px);
+    max-width: 390px;
 
-    color: #263746;
+    height: auto;
 
-    margin-bottom: 45px;
+    margin-bottom: 10px;
 }
 
 
-/* Invitation text */
-
-.invitation-text {
+.small-date {
     font-family: Arial, sans-serif;
 
-    font-size: 15px;
+    font-size: 11px;
 
-    line-height: 1.8;
+    letter-spacing: 3px;
 
-    color: #65717a;
+    color: #78656b;
 
-    margin-bottom: 45px;
+    margin-bottom: 15px;
+}
+
+
+.couple-names {
+    font-size: 28px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    color: #a76879;
+
+    margin-bottom: 20px;
+}
+
+
+.couple-names span {
+    font-style: italic;
+
+    font-weight: 400;
+
+    margin: 0 4px;
+}
+
+
+
+
+
+.wedding-title {
+    font-size: 17px;
+
+    letter-spacing: 2px;
+
+    color: #a76879;
+
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.wedding-text {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.9;
+
+    color: #78656b;
+
+    margin-bottom: 30px;
+}
+
+
+.cupids {
+    width: 100%;
+
+    max-width: 300px;
+
+    height: auto;
 }
 
 
 /* =========================
-   DATE
+   CHILDHOOD
 ========================= */
 
-.date {
-    display: flex;
-
-    align-items: center;
-
-    gap: 20px;
+.childhood-section {
+    background: #fff8f2;
+    box-shadow: 100vw 0 0 #fff8f2, -100vw 0 0 #fff8f2;
 }
 
 
-.date-day {
-    font-size: 65px;
+.childhood-photos {
+    display: flex;
 
-    color: #b08d57;
+    align-items: flex-end;
+    justify-content: center;
 
-    line-height: 1;
+    gap: 12px;
+
+    margin-bottom: 35px;
 }
 
 
-.date-month {
-    display: flex;
-    flex-direction: column;
+.childhood-photo {
+    width: 46%;
+}
 
-    text-align: left;
 
+.childhood-photo img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+
+.childhood-photo p {
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    color: #a76879;
+}
+
+
+.childhood-text {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+
+    color: #78656b;
+}
+
+
+/* =========================
+   SECOND INVITATION
+========================= */
+
+.second-invitation {
+    background: #c27d99;
+    box-shadow: 100vw 0 0 #c27d99, -100vw 0 0 #c27d99;
+    color: white;
+}
+
+
+.second-invitation h2 {
+    font-size: 21px;
+
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+
+.second-invitation p {
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+}
+
+
+.small-heart {
+    font-size: 20px;
+
+    margin-bottom: 25px;
+
+    color: #f8e7e1;
+}
+
+
+/* =========================
+   CALENDAR
+========================= */
+
+.calendar-section {
+    background: #f7eee8;
+    box-shadow: 100vw 0 0 #f7eee8, -100vw 0 0 #f7eee8;
+}
+
+
+.calendar-date {
     font-family: Arial, sans-serif;
 
     font-size: 12px;
 
     letter-spacing: 2px;
 
+    color: #78656b;
+
+    margin-bottom: 35px;
+}
+
+
+.calendar {
+    width: 100%;
+
+    max-width: 340px;
+
+    margin: 0 auto;
+}
+
+
+.calendar-month {
+    font-size: 17px;
+
+    letter-spacing: 3px;
+
+    color: #a76879;
+
+    margin-bottom: 25px;
+}
+
+
+.calendar-weekdays,
+.calendar-days {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 10px;
+}
+
+
+.calendar-weekdays {
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    color: #a76879;
+
+    margin-bottom: 15px;
+}
+
+
+.calendar-days {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    color: #78656b;
+}
+
+
+.calendar-days span {
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+.wedding-day img {
+    position: absolute;
+
+    width: 38px;
+    height: 38px;
+
+    object-fit: contain;
+
+    z-index: 1;
+}
+
+
+.wedding-day strong {
+    position: relative;
+
+    z-index: 2;
+
+    color: #fff;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   LOCATION
+========================= */
+
+.location-section {
+    background: #c27d99;
+    box-shadow: 100vw 0 0 #c27d99, -100vw 0 0 #c27d99;
+    color: white;
+}
+
+
+.location-section h2 {
+    font-size: 20px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 30px;
+}
+
+
+.location-main {
+    font-size: 19px;
+
+    margin-bottom: 15px;
+}
+
+
+.location-address {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
     line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+.candles {
+    width: 100%;
+
+    max-width: 220px;
+
+    height: auto;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline-section {
+    background: #fff8f2;
+    box-shadow: 100vw 0 0 #fff8f2, -100vw 0 0 #fff8f2;
+}
+
+
+.timeline {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    max-width: 280px;
+
+    margin: 0 auto;
+}
+
+
+.timeline-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    text-align: left;
+}
+
+
+.timeline-item img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+}
+
+
+.timeline-item h3 {
+    font-size: 18px;
+
+    font-weight: 400;
+
+    color: #a76879;
+
+    margin-bottom: 5px;
+}
+
+
+.timeline-item p {
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    color: #78656b;
+}
+
+
+/* =========================
+   GIFTS
+========================= */
+
+.gift-section {
+    background: #c27d99;
+    box-shadow: 100vw 0 0 #c27d99, -100vw 0 0 #c27d99;
+    color: white;
+}
+
+
+.glasses {
+    width: 100%;
+    
+    max-width: 230px;
+
+    height: auto;
+
+    margin-bottom: 25px;
+}
+
+
+.gift-section h2 {
+    font-size: 20px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+}
+
+
+.gift-section p {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================
+   DRESS CODE
+========================= */
+
+.dresscode-section {
+    background: #f7eee8;
+    box-shadow: 100vw 0 0 #f7eee8, -100vw 0 0 #f7eee8;
+}
+
+
+.dresscode-text {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    color: #78656b;
+
+    margin-bottom: 30px;
+}
+
+
+.color-palette {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-bottom: 35px;
+}
+
+
+.color-circle {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: 2px solid #fff;
+
+    box-shadow:
+        0 0 0 1px #c8a1aa;
+}
+
+
+/* CHANGE THESE 3 COLORS IF NEEDED */
+
+.color-one {
+    background: #cb4c7c;
+}
+
+
+.color-two {
+    background: #e5b9c3;
+}
+
+
+.color-three {
+    background: #6d7d78;
+}
+
+
+/* 9 PHOTO GALLERY */
+
+.dress-gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 5px;
+
+    margin-bottom: 30px;
+}
+
+
+.dress-gallery img {
+    width: 100%;
+
+    aspect-ratio: 1 / 1.25;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.dress-heart {
+    width: 45px;
+
+    height: auto;
 }
 
 
@@ -167,72 +674,123 @@ body {
 ========================= */
 
 .countdown-section {
-    min-height: 45vh;
-
-    background: #263746;
-
+    background: #c27d99;
+    box-shadow: 100vw 0 0 #c27d99, -100vw 0 0 #c27d99;
     color: white;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    padding: 60px 20px;
 }
 
 
-.countdown-title {
-    font-family: Arial, sans-serif;
+.countdown-section h2 {
+    font-size: 19px;
 
-    font-size: 11px;
+    font-weight: 400;
 
-    letter-spacing: 3px;
+    line-height: 1.7;
 
-    color: #d6bd8a;
+    letter-spacing: 1px;
 
     margin-bottom: 40px;
 }
 
 
 .countdown {
-    display: flex;
+    display: grid;
 
-    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
 
-    gap: 35px;
+    gap: 10px;
 
-    flex-wrap: wrap;
-}
-
-
-.time-box {
-    min-width: 75px;
-
-    text-align: center;
+    width: 100%;
 }
 
 
 .time-box span {
     display: block;
 
-    font-size: 40px;
+    font-size: 27px;
 
-    color: white;
-
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 
 .time-box p {
     font-family: Arial, sans-serif;
 
-    font-size: 9px;
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    color: #f6e2e5;
+}
+
+
+/* =========================
+   CONTACTS
+========================= */
+
+.contact-section {
+    background: #fff8f2;
+    box-shadow: 100vw 0 0 #fff8f2, -100vw 0 0 #fff8f2;
+    padding-bottom: 90px;
+}
+
+
+.contact-text {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    color: #78656b;
+
+    margin-bottom: 35px;
+}
+
+
+.contact-info {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    line-height: 2;
+
+    color: #78656b;
+}
+
+
+.contact-info p:nth-child(1),
+.contact-info p:nth-child(4) {
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    color: #a76879;
+}
+
+
+.contact-line {
+    width: 40px;
+    height: 1px;
+
+    background: #c27d99;
+
+    margin: 25px auto;
+}
+
+
+.final-text {
+    margin-top: 50px;
+
+    font-size: 16px;
 
     letter-spacing: 2px;
 
-    color: #d6bd8a;
+    line-height: 1.7;
+
+    color: #a76879;
 }
 
 
@@ -242,23 +800,24 @@ body {
 
 .opening-screen {
     position: fixed;
+
     inset: 0;
+
+    z-index: 100;
 
     background: #CB4C7C;
 
-    transition: background 0.3s ease;
     display: flex;
+
     justify-content: center;
     align-items: center;
-}
-.opening-screen.open {
-    background: transparent;
-    pointer-events: none;
+
+    overflow: hidden;
+
+    transition:
+        background 0.3s ease;
 }
 
-/* =========================
-   ENVELOPE
-========================= */
 
 .envelope {
     position: relative;
@@ -269,13 +828,14 @@ body {
     overflow: hidden;
 }
 
+
 .envelope-part {
     position: absolute;
 
+    left: 0;
+
     width: 100%;
     height: 50%;
-
-    left: 0;
 
     object-fit: fill;
 
@@ -286,23 +846,17 @@ body {
 }
 
 
-/* TOP PART */
-
 .envelope-top {
     top: 0;
 }
 
-
-/* BOTTOM PART */
 
 .envelope-bottom {
     bottom: 0;
 }
 
 
-/* =========================
-   WAX SEAL
-========================= */
+/* WAX SEAL */
 
 .wax-seal {
     position: absolute;
@@ -310,10 +864,11 @@ body {
     top: 50%;
     left: 50%;
 
-    transform: translate(-50%, -50%);
+    transform:
+        translate(-50%, -50%);
 
-    width: 95px;
-    height: 95px;
+    width: 90px;
+    height: 90px;
 
     border: none;
 
@@ -339,26 +894,26 @@ body {
 }
 
 
-/* =========================
-   OPEN ANIMATION
-========================= */
+/* OPEN ENVELOPE */
 
+.opening-screen.open {
+    background: transparent;
 
-/* Top moves up */
+    pointer-events: none;
+}
+
 
 .opening-screen.open .envelope-top {
-    transform: translateY(-110%);
+    transform:
+        translateY(-110%);
 }
 
-
-/* Bottom moves down */
 
 .opening-screen.open .envelope-bottom {
-    transform: translateY(110%);
+    transform:
+        translateY(110%);
 }
 
-
-/* Seal disappears */
 
 .opening-screen.open .wax-seal {
     transform:
@@ -366,56 +921,26 @@ body {
         scale(0);
 
     opacity: 0;
-
-    pointer-events: none;
 }
 
 
 /* =========================
    DESKTOP
-   Envelope is phone-sized
-   and centered
 ========================= */
 
 @media (min-width: 768px) {
 
+    .invitation {
+        box-shadow:
+            0 0 30px
+            rgba(0, 0, 0, 0.15);
+    }
+
+
     .envelope {
         width: 430px;
+
         height: min(100dvh, 850px);
-    }
-
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 480px) {
-
-    .hero {
-        min-height: 100vh;
-    }
-
-
-    .countdown {
-        gap: 20px;
-    }
-
-
-    .time-box {
-        min-width: 60px;
-    }
-
-
-    .time-box span {
-        font-size: 30px;
-    }
-
-
-    .wax-seal {
-        width: 80px;
-        height: 80px;
     }
 
 }

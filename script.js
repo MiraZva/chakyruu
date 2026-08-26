@@ -2,7 +2,8 @@
    OPENING ENVELOPE
 ========================= */
 
-const waxSeal = document.getElementById("waxSeal");
+const waxSeal =
+    document.getElementById("waxSeal");
 
 const openingScreen =
     document.getElementById("openingScreen");
@@ -13,8 +14,6 @@ const music =
 
 waxSeal.addEventListener("click", () => {
 
-    /* Prevent multiple clicks */
-
     if (
         openingScreen.classList.contains("open")
     ) {
@@ -22,7 +21,7 @@ waxSeal.addEventListener("click", () => {
     }
 
 
-    /* Start opening animation */
+    /* Open envelope */
 
     openingScreen.classList.add("open");
 
@@ -39,8 +38,7 @@ waxSeal.addEventListener("click", () => {
     });
 
 
-    /* Remove opening screen
-       after animation */
+    /* Remove after envelope animation */
 
     setTimeout(() => {
 
@@ -51,15 +49,19 @@ waxSeal.addEventListener("click", () => {
 });
 
 
+
 /* =========================
-   COUNTDOWN TIMER
+   COUNTDOWN
 ========================= */
 
 
-/* CHANGE THIS DATE */
+/* WEDDING DATE:
+   27 SEPTEMBER 2026
+   18:00
+*/
 
 const weddingDate = new Date(
-    "September 25, 2026 18:00:00"
+    "2026-09-27T18:00:00"
 ).getTime();
 
 
@@ -73,91 +75,93 @@ function updateCountdown() {
         weddingDate - now;
 
 
-    /* Wedding already started */
-
     if (distance <= 0) {
 
         document.getElementById(
             "days"
-        ).innerText = "00";
+        ).textContent = "00";
 
 
         document.getElementById(
             "hours"
-        ).innerText = "00";
+        ).textContent = "00";
 
 
         document.getElementById(
             "minutes"
-        ).innerText = "00";
+        ).textContent = "00";
 
 
         document.getElementById(
             "seconds"
-        ).innerText = "00";
+        ).textContent = "00";
 
 
         return;
     }
 
 
-    const days = Math.floor(
-        distance /
-        (1000 * 60 * 60 * 24)
-    );
-
-
-    const hours = Math.floor(
-        (
-            distance %
+    const days =
+        Math.floor(
+            distance /
             (1000 * 60 * 60 * 24)
-        )
-        /
-        (1000 * 60 * 60)
-    );
+        );
 
 
-    const minutes = Math.floor(
-        (
-            distance %
+    const hours =
+        Math.floor(
+            (
+                distance %
+                (1000 * 60 * 60 * 24)
+            )
+            /
             (1000 * 60 * 60)
-        )
-        /
-        (1000 * 60)
-    );
+        );
 
 
-    const seconds = Math.floor(
-        (
-            distance %
+    const minutes =
+        Math.floor(
+            (
+                distance %
+                (1000 * 60 * 60)
+            )
+            /
             (1000 * 60)
-        )
-        /
-        1000
-    );
+        );
+
+
+    const seconds =
+        Math.floor(
+            (
+                distance %
+                (1000 * 60)
+            )
+            /
+            1000
+        );
 
 
     document.getElementById(
         "days"
-    ).innerText =
+    ).textContent =
         String(days).padStart(2, "0");
 
 
     document.getElementById(
         "hours"
-    ).innerText =
+    ).textContent =
         String(hours).padStart(2, "0");
 
 
     document.getElementById(
         "minutes"
-    ).innerText =
+    ).textContent =
         String(minutes).padStart(2, "0");
 
 
     document.getElementById(
         "seconds"
-    ).innerText =
+    ).textContent =
         String(seconds).padStart(2, "0");
 
 }

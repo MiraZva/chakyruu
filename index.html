@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Жайнагүл — Кыз Узатуу</title>
+    <title>Жайнагүл & Сыймык</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,203 +17,752 @@
 
 <body>
 
-    <!-- =========================
-         MAIN WEDDING WEBSITE
-    ========================== -->
 
-    <main class="invitation">
+<!-- =========================
+     OPENING ENVELOPE
+========================= -->
 
-        <section class="hero">
+<div
+    class="opening-screen"
+    id="openingScreen"
+>
 
-            <p class="eyebrow">
-                WEDDING CELEBRATION
-            </p>
+    <div class="envelope">
 
+        <img
+            class="envelope-part envelope-top"
+            src="assets/images/envelope-top.png"
+            alt=""
+        >
 
-            <h1>
-                Жайнагүл
-            </h1>
+        <img
+            class="envelope-part envelope-bottom"
+            src="assets/images/envelope-bottom.png"
+            alt=""
+        >
 
-
-            <div class="gold-line"></div>
-
-
-            <p class="event-name">
-                Кыз Узатуу
-            </p>
-
-
-            <p class="invitation-text">
-                Dear family and friends,<br>
-                we would be honored to share<br>
-                this special day with you.
-            </p>
-
-
-            <div class="date">
-
-                <div class="date-day">
-                    25
-                </div>
-
-
-                <div class="date-month">
-
-                    <span>
-                        SEPTEMBER
-                    </span>
-
-                    <span>
-                        2026
-                    </span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             COUNTDOWN
-        ========================== -->
-
-        <section class="countdown-section">
-
-            <p class="countdown-title">
-                UNTIL THE CELEBRATION
-            </p>
-
-
-            <div class="countdown">
-
-                <div class="time-box">
-
-                    <span id="days">
-                        00
-                    </span>
-
-                    <p>
-                        DAYS
-                    </p>
-
-                </div>
-
-
-                <div class="time-box">
-
-                    <span id="hours">
-                        00
-                    </span>
-
-                    <p>
-                        HOURS
-                    </p>
-
-                </div>
-
-
-                <div class="time-box">
-
-                    <span id="minutes">
-                        00
-                    </span>
-
-                    <p>
-                        MINUTES
-                    </p>
-
-                </div>
-
-
-                <div class="time-box">
-
-                    <span id="seconds">
-                        00
-                    </span>
-
-                    <p>
-                        SECONDS
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- =========================
-         OPENING ENVELOPE
-    ========================== -->
-
-    <div
-        class="opening-screen"
-        id="openingScreen"
-    >
-
-        <div class="envelope">
-
-            <!-- TOP PART -->
+        <button
+            class="wax-seal"
+            id="waxSeal"
+            aria-label="Открыть приглашение"
+        >
 
             <img
-                class="envelope-part envelope-top"
-                src="assets/images/envelope-top.png"
+                src="assets/images/wax-seal.png"
                 alt=""
             >
 
-
-            <!-- BOTTOM PART -->
-
-            <img
-                class="envelope-part envelope-bottom"
-                src="assets/images/envelope-bottom.png"
-                alt=""
-            >
-
-
-            <!-- WAX SEAL -->
-
-            <button
-                class="wax-seal"
-                id="waxSeal"
-                aria-label="Open invitation"
-            >
-
-                <img
-                    src="assets/images/wax-seal.png"
-                    alt=""
-                >
-
-            </button>
-
-        </div>
+        </button>
 
     </div>
 
+</div>
+
+
+<!-- =========================
+     MAIN INVITATION
+========================= -->
+
+<main class="invitation">
 
 
     <!-- =========================
-         MUSIC
+         1. FIRST SECTION
     ========================== -->
 
-    <audio
-        id="backgroundMusic"
-        loop
-    >
+    <section class="wedding-page">
 
-        <source
-            src="assets/music/song.mp4"
-            type="audio/mp4"
+        <img
+            class="top-ribbon"
+            src="assets/images/ribbon.svg"
+            alt=""
         >
 
-    </audio>
+
+        <p class="small-date">
+            27 / 09 / 26
+        </p>
 
 
-    <script src="script.js"></script>
+        <h1 class="couple-names">
+            ЖАЙНАГҮЛ
+            <span>&</span>
+            СЫЙМЫК
+        </h1>
+
+        <div class="main-photo">
+            <img
+            src="assets/images/main.png"
+            alt="Жайнагүл и Сыймык"
+            >
+        </div>
+
+
+
+
+        <h2 class="wedding-title">
+            У НАС СВАДЬБА!
+        </h2>
+
+
+        <p class="wedding-text">
+
+            Дорогие и любимые, мы приглашаем вас
+            <br>
+            на самый важный день нашей жизни.
+            <br>
+            С нетерпением ждём встречи!
+
+        </p>
+
+
+        <img
+            class="cupids"
+            src="assets/images/cupids.png"
+            alt=""
+        >
+
+    </section>
+
+
+
+    <!-- =========================
+         2. CHILDHOOD STORY
+    ========================== -->
+
+    <section class="childhood-section">
+
+        <p class="section-number">
+            01
+        </p>
+
+
+        <h2 class="section-title">
+            ДА-ДА, ЭТО МЫ!
+        </h2>
+
+
+        <div class="childhood-photos">
+
+            <div class="childhood-photo">
+
+                <img
+                    src="assets/images/childhood-girl.jpg"
+                    alt="Жайнагүл в детстве"
+                >
+
+                <p>
+                    ЖАЙНАГҮЛ
+                </p>
+
+            </div>
+
+
+            <div class="childhood-photo">
+
+                <img
+                    src="assets/images/childhood-boy.jpg"
+                    alt="Сыймык в детстве"
+                >
+
+                <p>
+                    СЫЙМЫК
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p class="childhood-text">
+
+            Когда-то мы были маленькими
+            <br>
+            и даже не подозревали,
+            <br>
+            что однажды наши дороги пересекутся.
+
+            <br><br>
+
+            Время летит так быстро...
+            <br>
+            И вот мы повзрослели
+            <br>
+            и теперь создаём свою семью!
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         3. WEDDING INVITATION
+    ========================== -->
+
+    <section class="second-invitation">
+
+        <p class="section-number light">
+            02
+        </p>
+
+
+        <h2>
+            СКОРО СОСТОИТСЯ
+            <br>
+            ОЧЕНЬ ВАЖНОЕ
+            <br>
+            И СЧАСТЛИВОЕ СОБЫТИЕ
+        </h2>
+
+
+        <div class="small-heart">
+            ♥
+        </div>
+
+
+        <p>
+
+            С большим удовольствием
+            <br>
+            приглашаем вас разделить
+            <br>
+            с нами этот особенный день!
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         4. DATE + CALENDAR
+    ========================== -->
+
+    <section class="calendar-section">
+
+        <p class="section-number">
+            03
+        </p>
+
+
+        <h2 class="section-title">
+            ДАТА ТОРЖЕСТВА
+        </h2>
+
+
+        <p class="calendar-date">
+            27 СЕНТЯБРЯ 2026
+        </p>
+
+
+        <div class="calendar">
+
+            <div class="calendar-month">
+                СЕНТЯБРЬ
+            </div>
+
+
+            <div class="calendar-weekdays">
+
+                <span>ПН</span>
+                <span>ВТ</span>
+                <span>СР</span>
+                <span>ЧТ</span>
+                <span>ПТ</span>
+                <span>СБ</span>
+                <span>ВС</span>
+
+            </div>
+
+
+            <div class="calendar-days">
+
+                <span></span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>11</span>
+                <span>12</span>
+                <span>13</span>
+
+                <span>14</span>
+                <span>15</span>
+                <span>16</span>
+                <span>17</span>
+                <span>18</span>
+                <span>19</span>
+                <span>20</span>
+
+                <span>21</span>
+                <span>22</span>
+                <span>23</span>
+                <span>24</span>
+                <span>25</span>
+                <span>26</span>
+
+                <span class="wedding-day">
+
+                    <img
+                        src="assets/images/heart.svg"
+                        alt=""
+                    >
+
+                    <strong>27</strong>
+
+                </span>
+
+                <span>28</span>
+                <span>29</span>
+                <span>30</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         5. LOCATION
+    ========================== -->
+
+    <section class="location-section">
+
+        <p class="section-number light">
+            04
+        </p>
+
+
+        <h2>
+            МЕСТО ПРОВЕДЕНИЯ
+        </h2>
+
+
+        <p class="location-main">
+            Название ресторана
+        </p>
+
+
+        <p class="location-address">
+            Здесь будет адрес
+            <br>
+            вашего торжества
+        </p>
+
+
+        <img
+            class="candles"
+            src="assets/images/candles.png"
+            alt=""
+        >
+
+    </section>
+
+
+
+    <!-- =========================
+         6. WEDDING TIMELINE
+    ========================== -->
+
+    <section class="timeline-section">
+
+        <p class="section-number">
+            05
+        </p>
+
+
+        <h2 class="section-title">
+            ПРОГРАММА ДНЯ
+        </h2>
+
+
+        <div class="timeline">
+
+
+            <!-- TIMELINE 1 -->
+
+            <div class="timeline-item">
+
+                <img
+                    src="assets/images/timeline-1.png"
+                    alt=""
+                >
+
+                <div>
+
+                    <h3>
+                        17:00
+                    </h3>
+
+                    <p>
+                        СБОР ГОСТЕЙ
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TIMELINE 2 -->
+
+            <div class="timeline-item">
+
+                <img
+                    src="assets/images/timeline-2.png"
+                    alt=""
+                >
+
+                <div>
+
+                    <h3>
+                        18:00
+                    </h3>
+
+                    <p>
+                        НАЧАЛО ТОРЖЕСТВА
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TIMELINE 3 -->
+
+            <div class="timeline-item">
+
+                <img
+                    src="assets/images/timeline-3.png"
+                    alt=""
+                >
+
+                <div>
+
+                    <h3>
+                        19:00
+                    </h3>
+
+                    <p>
+                        ПРАЗДНИЧНЫЙ УЖИН
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TIMELINE 4 -->
+
+            <div class="timeline-item">
+
+                <img
+                    src="assets/images/timeline-4.png"
+                    alt=""
+                >
+
+                <div>
+
+                    <h3>
+                        23:00
+                    </h3>
+
+                    <p>
+                        ЗАВЕРШЕНИЕ ВЕЧЕРА
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         7. GIFT MESSAGE
+    ========================== -->
+
+    <section class="gift-section">
+
+        <img
+            class="glasses"
+            src="assets/images/glasses.png"
+            alt=""
+        >
+
+
+        <p class="section-number light">
+            06
+        </p>
+
+
+        <h2>
+            ПОДАРКИ
+        </h2>
+
+
+        <p>
+
+            Ваше присутствие —
+            <br>
+            самый важный подарок для нас!
+            <br><br>
+            Но если вы захотите
+            <br>
+            порадовать нас чем-то ещё,
+            <br>
+            мы будем рады вашему вкладу
+            <br>
+            в бюджет нашей молодой семьи.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         8. DRESS CODE
+    ========================== -->
+
+    <section class="dresscode-section">
+
+        <p class="section-number">
+            07
+        </p>
+
+
+        <h2 class="section-title">
+            ДРЕСС-КОД
+        </h2>
+
+
+        <p class="dresscode-text">
+
+            Нам будет очень приятно,
+            <br>
+            если вы поддержите
+            <br>
+            цветовую палитру нашего праздника.
+
+        </p>
+
+
+        <div class="color-palette">
+
+            <div class="color-circle color-one"></div>
+
+            <div class="color-circle color-two"></div>
+
+            <div class="color-circle color-three"></div>
+
+        </div>
+
+
+
+        <!-- 9 DRESS CODE PHOTOS -->
+
+        <div class="dress-gallery">
+
+            <img src="assets/images/dress-1.jpg" alt="">
+            <img src="assets/images/dress-2.jpg" alt="">
+            <img src="assets/images/dress-3.jpg" alt="">
+
+            <img src="assets/images/dress-4.jpg" alt="">
+            <img src="assets/images/dress-5.jpg" alt="">
+            <img src="assets/images/dress-6.jpg" alt="">
+
+            <img src="assets/images/dress-7.jpg" alt="">
+            <img src="assets/images/dress-8.jpg" alt="">
+            <img src="assets/images/dress-9.jpg" alt="">
+
+        </div>
+
+
+        <img
+            class="dress-heart"
+            src="assets/images/little-heart.png"
+            alt=""
+        >
+
+    </section>
+
+
+
+    <!-- =========================
+         9. COUNTDOWN
+    ========================== -->
+
+    <section class="countdown-section">
+
+        <p class="section-number light">
+            08
+        </p>
+
+
+        <h2>
+            ДО НАШЕГО ПРАЗДНИКА
+            <br>
+            ОСТАЛОСЬ
+        </h2>
+
+
+        <div class="countdown">
+
+            <div class="time-box">
+
+                <span id="days">
+                    00
+                </span>
+
+                <p>
+                    ДНЕЙ
+                </p>
+
+            </div>
+
+
+            <div class="time-box">
+
+                <span id="hours">
+                    00
+                </span>
+
+                <p>
+                    ЧАСОВ
+                </p>
+
+            </div>
+
+
+            <div class="time-box">
+
+                <span id="minutes">
+                    00
+                </span>
+
+                <p>
+                    МИНУТ
+                </p>
+
+            </div>
+
+
+            <div class="time-box">
+
+                <span id="seconds">
+                    00
+                </span>
+
+                <p>
+                    СЕКУНД
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         10. CONTACT INFORMATION
+    ========================== -->
+
+    <section class="contact-section">
+
+        <p class="section-number">
+            09
+        </p>
+
+
+        <h2 class="section-title">
+            КОНТАКТНАЯ ИНФОРМАЦИЯ
+        </h2>
+
+
+        <p class="contact-text">
+
+            По всем вопросам,
+            связанным с нашим праздником,
+            вы можете связаться с нами.
+
+        </p>
+
+
+        <div class="contact-info">
+
+            <p>
+                ЖАЙНАГҮЛ
+            </p>
+
+            <p>
+                +996 XXX XXX XXX
+            </p>
+
+
+            <div class="contact-line"></div>
+
+
+            <p>
+                СЫЙМЫК
+            </p>
+
+            <p>
+                +996 XXX XXX XXX
+            </p>
+
+        </div>
+
+
+        <p class="final-text">
+            ЖДЁМ ВАС
+            <br>
+            С БОЛЬШИМ НЕТЕРПЕНИЕМ ♥
+        </p>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<audio
+    id="backgroundMusic"
+    loop
+>
+
+    <source
+        src="assets/music/song.mp4"
+        type="audio/mp4"
+    >
+
+</audio>
+
+
+<script src="script.js"></script>
 
 </body>
 
