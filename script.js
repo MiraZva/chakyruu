@@ -5,8 +5,10 @@
 const waxSeal =
     document.getElementById("waxSeal");
 
+
 const openingScreen =
     document.getElementById("openingScreen");
+
 
 const music =
     document.getElementById("backgroundMusic");
@@ -38,6 +40,11 @@ waxSeal.addEventListener("click", () => {
     });
 
 
+    /* SHOW MUSIC STICKER */
+
+    musicSticker.classList.add("show");
+
+
     /* Remove after envelope animation */
 
     setTimeout(() => {
@@ -47,7 +54,6 @@ waxSeal.addEventListener("click", () => {
     }, 1600);
 
 });
-
 
 
 /* =========================
@@ -177,4 +183,218 @@ updateCountdown();
 setInterval(
     updateCountdown,
     1000
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   BUTTERFLY SCROLL PATH
+========================= */
+
+const timelineSection =
+    document.getElementById(
+        "timelineSection"
+    );
+
+
+const butterfly =
+    document.getElementById(
+        "butterfly"
+    );
+
+
+const butterflyPath =
+    document.getElementById(
+        "butterflyPath"
+    );
+
+
+const pathLength =
+    butterflyPath.getTotalLength();
+
+
+function updateButterfly() {
+
+    const sectionRect =
+        timelineSection.getBoundingClientRect();
+
+
+    const timelineRect =
+        document.querySelector(
+            ".butterfly-timeline"
+        ).getBoundingClientRect();
+
+
+    /*
+        START:
+        section enters viewport
+
+        END:
+        section leaves viewport
+    */
+
+    let progress =
+        (
+            window.innerHeight -
+            sectionRect.top
+        )
+        /
+        (
+            sectionRect.height +
+            window.innerHeight
+        );
+
+
+    /*
+        Keep between 0 and 1
+    */
+
+    progress =
+        Math.max(
+            0,
+            Math.min(
+                1,
+                progress
+            )
+        );
+
+
+    /*
+        Position on path
+    */
+
+    const point =
+        butterflyPath.getPointAtLength(
+            pathLength * progress
+        );
+
+
+    /*
+        Convert SVG coordinates
+        to real pixel coordinates
+    */
+
+    const x =
+        (
+            point.x /
+            413
+        )
+        *
+        timelineRect.width;
+
+
+    const y =
+        (
+            point.y /
+            905
+        )
+        *
+        timelineRect.height;
+
+
+    /*
+        Move butterfly
+    */
+
+    butterfly.style.left =
+        `${x}px`;
+
+
+    butterfly.style.top =
+        `${y}px`;
+
+}
+
+
+/* =========================
+   EVENTS
+========================= */
+
+window.addEventListener(
+    "scroll",
+    updateButterfly,
+    {
+        passive: true
+    }
+);
+
+
+window.addEventListener(
+    "resize",
+    updateButterfly
+);
+
+
+/* Initial position */
+
+updateButterfly();
+
+
+
+/* =========================
+   MUSIC STICKER
+========================= */
+
+const musicSticker =
+    document.getElementById("musicSticker");
+
+const musicStickerText =
+    document.getElementById("musicStickerText");
+
+
+musicSticker.addEventListener(
+    "click",
+    () => {
+
+        if (music.paused) {
+
+            music.play()
+                .then(() => {
+
+                    musicStickerText.textContent =
+                        "ТОКТОТ";
+
+                })
+                .catch((error) => {
+
+                    console.log(
+                        "Music could not start:",
+                        error
+                    );
+
+                });
+
+        } else {
+
+            music.pause();
+
+            musicStickerText.textContent =
+                "МУЗЫКА";
+
+        }
+
+    }
 );
