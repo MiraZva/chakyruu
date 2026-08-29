@@ -747,7 +747,7 @@ section {
     position: relative;
 
     overflow: hidden;
-    width: 440;
+    /* width: 440; */
     gap: 2px;
 }
 .gift-section .container {
@@ -1023,7 +1023,7 @@ section {
 
     transform:
         translate(-50%, -50%);
-
+    
     width: 220px;
 
     height: 220px;
